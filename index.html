@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پورتفولیو شعیب فاتح - Vision Graphics</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0" />
+  <title>پورتفولیو شعیب فاتح</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="particles"></div>
-    <div class="overlay"></div>
-    <header>
-        <h1>شعیب فاتح - دیزاینر گرافیک</h1>
-        <p>مؤسس Vision Graphics، متخصص در طراحی تبلیغات و گرافیک</p>
-        <button id="view-portfolio">دیدن پورتفولیو</button>
-        <div class="social-links">
-            <a href="https://wa.me/message/2EBMCIMGJS7CM1" target="_blank">WhatsApp</a>
-            <a href="https://t.me/VisionGOfficial" target="_blank">Telegram</a>
-            <a href="https://www.facebook.com/VisionGraphicx21/" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/VisionGraphix21/" target="_blank">Instagram</a>
-        </div>
-    </header>
-    <section id="portfolio" class="hidden">
-        <h2>نمونه کارها</h2>
-        <div class="gallery">
-            <img src="sample1.jpg" alt="پوستر مرکز آموزشی امید افغانستان">
-            <img src="sample2.jpg" alt="لوگو مسلم یوت آکادمی">
-            <img src="sample3.jpg" alt="بنر کافه کتاب یارزاده">
-            <img src="sample4.jpg" alt="پوستر آکادمی آموزش آسان">
-            <img src="sample5.jpg" alt="طرح مرکز آموزشی هنر سرا">
-        </div>
-    </section>
-    <footer>
-        <p>شعیب فاتح - @VisionGOfficial</p>
-    </footer>
-    <div id="fullscreen" class="hidden">
-        <img id="fullscreen-img" src="" alt="نمونه کار">
-        <button id="close-fullscreen">بستن</button>
+  <!-- PARTICLES -->
+  <canvas id="particles"></canvas>
+
+  <!-- INTRO SECTION -->
+  <section id="intro">
+    <div class="backdrop"></div>
+    <div class="content">
+      <h1>شعیب فاتح</h1>
+      <p>مؤسس Vision Graphics — دیزاینر گرافیک و فول‌استک وب</p>
+      <button id="btn-portfolio">دیدن پورتفولیو</button>
+      <div class="links">
+        <a href="https://wa.me/message/2EBMCIMGJS7CM1" target="_blank">WhatsApp</a>
+        <a href="https://t.me/VisionGOfficial" target="_blank">Telegram</a>
+        <a href="https://www.facebook.com/VisionGraphicx21/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/VisionGraphix21/" target="_blank">Instagram</a>
+      </div>
     </div>
-    <script src="script.js"></script>
+  </section>
+
+  <!-- PORTFOLIO GALLERY -->
+  <section id="portfolio" class="hidden">
+    <h2>نمونه کارها</h2>
+    <div class="grid">
+      <!-- تصاویر به صورت داینامیک در JS بارگذاری می‌شن -->
+    </div>
+  </section>
+
+  <!-- FULLSCREEN VIEW -->
+  <div id="fullscreen" class="hidden">
+    <img src="" alt="نمونه کار" />
+    <button id="close-full">✕</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>شعیب فاتح — <a href="https://t.me/VisionGOfficial">@VisionGOfficial</a></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
