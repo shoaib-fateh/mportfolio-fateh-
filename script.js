@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'try_12.jpg',
     'Web-Design.jpg',
     'Acadmey-Amozes-Asan---Amozesh-Englisi.jpg',
+    'Vision-Graphix-Eid.jpg',
   ];
 
   // ساخت گالری
