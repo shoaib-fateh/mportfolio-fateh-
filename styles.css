@@ -1,3 +1,36 @@
+/* FONT: Peyda */
+@font-face {
+  font-family: 'Peyda';
+  src: url('fonts/PeydaWeb Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Peyda';
+  src: url('fonts/PeydaWeb Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Peyda';
+  src: url('fonts/PeydaWeb SemBd.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Peyda';
+  src: url('fonts/PeydaWeb ExtBd.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Peyda';
+  src: url('fonts/PeydaWeb Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
 /* styles.css */
 :root {
   --blue: #00aaff;
@@ -6,12 +39,22 @@
 }
 * { margin:0; padding:0; box-sizing:border-box }
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Peyda', 'Segoe UI', sans-serif;
   background: var(--dark-bg);
   color: var(--light-text);
   direction: rtl;
   overflow-x: hidden;
 }
+h1 {
+  font-weight: 900;
+}
+p {
+  font-weight: 300;
+}
+button {
+  font-weight: 600;
+}
+
 /* PARTICLES CANVAS */
 #particles {
   position: fixed; inset:0; z-index:-2;
