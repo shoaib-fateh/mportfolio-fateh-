@@ -1,52 +1,59 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta 
-    name="viewport" 
-    content="width=device-width, initial-scale=1.0" />
-  <title>پورتفولیو شعیب فاتح</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="نمونه‌کارهای گرافیکی Vision Graphics | طراحی پست، بروشور، برندینگ و بیشتر" />
+  <title>Vision Graphics | گالری نمونه‌کارها</title>
+  
+  <!-- Font + Styles -->
   <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <!-- PARTICLES -->
-  <canvas id="particles"></canvas>
+  <link rel="icon" href="logo.png" type="image/png" />
 
-  <!-- INTRO SECTION -->
+  <!-- Optional: SEO / Social -->
+  <meta property="og:title" content="Vision Graphics | گالری نمونه‌کارها" />
+  <meta property="og:description" content="نمایش بهترین طراحی‌های گرافیکی از برند Vision Graphics." />
+  <meta property="og:image" content="preview.jpg" />
+  <meta property="og:type" content="website" />
+</head>
+
+<body>
+
+  <!-- Background Effects -->
+  <canvas id="particles"></canvas>
+  <div class="backdrop"></div>
+
+  <!-- Intro Section -->
   <section id="intro">
-    <div class="backdrop"></div>
     <div class="content">
-      <h1>شعیب فاتح</h1>
-      <p>مؤسس <b>ویژن گرافیک</b> — دیزاینر گرافیک و فول‌استک وب</p>
-      <button id="btn-portfolio">دیدن پورتفولیو</button>
+      <h1>Vision Graphics</h1>
+      <p>طراحی گرافیک حرفه‌ای | پست، تبلیغات، برندینگ و بیشتر</p>
+      <button id="btn-portfolio">مشاهده نمونه‌کارها</button>
       <div class="links">
-        <a href="https://wa.me/message/2EBMCIMGJS7CM1" target="_blank">WhatsApp</a>
-        <a href="https://t.me/VisionGOfficial" target="_blank">Telegram</a>
-        <a href="https://www.facebook.com/VisionGraphicx21/" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/VisionGraphix21/" target="_blank">Instagram</a>
+        <a href="https://t.me/visiongraphics" target="_blank">تلگرام</a>
+        <a href="https://instagram.com/visiongraphics" target="_blank">اینستاگرام</a>
       </div>
     </div>
   </section>
 
-  <!-- PORTFOLIO GALLERY -->
+  <!-- Portfolio Section -->
   <section id="portfolio" class="hidden">
-    <h2>نمونه کارها</h2>
-    <div class="grid">
-      <!-- تصاویر به صورت داینامیک در JS بارگذاری می‌شن -->
-    </div>
+    <h2>نمونه‌کارهای من</h2>
+    <div class="grid"></div>
   </section>
 
-  <!-- FULLSCREEN VIEW -->
+  <!-- Fullscreen Image Viewer -->
   <div id="fullscreen" class="hidden">
-    <img src="" alt="نمونه کار" />
-    <button id="close-full">✕</button>
-  </div>
+        <img src="" alt="نمونه‌کار بزرگ‌شده" />
+    </div>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer>
-    <p>شعیب فاتح — <a href="https://t.me/VisionGOfficial">@VisionGOfficial</a></p>
+    طراحی شده توسط 
+    <a href="https://t.me/visiongraphics" target="_blank">Vision Graphics</a>
   </footer>
 
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
