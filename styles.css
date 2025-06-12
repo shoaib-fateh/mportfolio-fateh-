@@ -155,25 +155,27 @@ button { font-weight: 600; }
 #fullscreen {
   position: fixed;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
-  transition: opacity 0.3s ease;
+  z-index: 999;
+  transition: 0.3s ease;
 }
+
 #fullscreen.hidden {
   display: none;
 }
 
 #fullscreen img {
-  max-width: 90vw;
-  max-height: 90vh;
-  border-radius: 8px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.4);
-  transition: transform 0.2s ease;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
 }
+
 #fullscreen img:hover {
   transform: scale(1.01);
 }
